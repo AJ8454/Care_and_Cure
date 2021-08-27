@@ -1,5 +1,5 @@
-import 'package:care_and_cure/widgets/loginBody.dart';
-import 'package:care_and_cure/widgets/loginMenus.dart';
+import 'package:care_and_cure/loginScreen/initialPage.dart';
+import 'package:care_and_cure/loginScreen/registrationScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
@@ -23,29 +23,9 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (ctx) => InitialPage(),
+         // '/RegistrationScreen': (ctx) => RegistrationScreen(),
         },
       );
     });
-  }
-}
-
-class InitialPage extends StatelessWidget {
-  const InitialPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        backgroundColor: Colors.white,
-        body: ListView(
-              padding: EdgeInsets.symmetric(horizontal: 4.h, vertical: 2.h),
-              children: [
-                LoginMenus(),
-                LoginBody(),
-              ],
-            )
-        
-        
-        
-        );
   }
 }

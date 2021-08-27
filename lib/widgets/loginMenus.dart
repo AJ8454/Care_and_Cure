@@ -4,8 +4,6 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:sizer/sizer.dart';
 
 class LoginMenus extends StatelessWidget {
-  const LoginMenus({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -15,27 +13,33 @@ class LoginMenus extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              _menuItem(title: "About us"),
-              _menuItem(title: "Contact us"),
-              _menuItem(title: "Help"),
-            ],
-          ),
+          ResponsiveHelper.isDesktop(context) ? mainMenus(context) : SizedBox(),
           Row(
             children: [
-              _menuItem(title: "Sign in", isActive: true),
-              _registerButton(),
+              _menuItem(context, title: "Sign in", isActive: true),
+              _registerButton(context),
             ],
           )
         ],
       ),
     );
   }
+
+  Widget mainMenus(
+    context,
+  ) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.start,
+      children: [
+        _menuItem(context, title: "About us"),
+        _menuItem(context, title: "Contact us"),
+        _menuItem(context, title: "Help"),
+      ],
+    );
+  }
 }
 
-Widget _menuItem({String? title, bool isActive = false}) {
+Widget _menuItem(context, {String? title, bool isActive = false}) {
   return Padding(
     padding: EdgeInsets.only(right: 8.w),
     child: Column(
@@ -51,7 +55,7 @@ Widget _menuItem({String? title, bool isActive = false}) {
         SizedBox(height: 6),
         isActive
             ? Container(
-                width: 7.w,
+                width: ResponsiveHelper.isDesktop(context) ? 7.w : 10.w,
                 height: 5,
                 padding: EdgeInsets.symmetric(horizontal: 12.h, vertical: 12.h),
                 decoration: BoxDecoration(
@@ -65,27 +69,30 @@ Widget _menuItem({String? title, bool isActive = false}) {
   );
 }
 
-Widget _registerButton() {
-  return Container(
-    height: 35,
-    width: 13.w,
-    decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(15),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.grey.shade100,
-            spreadRadius: 10,
-            blurRadius: 12,
-          )
-        ]),
-    child: Center(
-      child: Text(
-        "Register",
-        style: TextStyle(
-          fontSize: 6.sp,
-          color: Colors.black45,
-          fontWeight: FontWeight.bold,
+Widget _registerButton(context) {
+  return GestureDetector(
+    onTap: () {},
+    child: Container(
+      height: 35,
+      width: ResponsiveHelper.isDesktop(context) ? 13.w : 18.w,
+      decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(15),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey.shade200,
+              spreadRadius: 10,
+              blurRadius: 12,
+            )
+          ]),
+      child: Center(
+        child: Text(
+          "Register",
+          style: TextStyle(
+            fontSize: ResponsiveHelper.isDesktop(context) ? 6.sp : 7.sp,
+            color: Colors.black45,
+            fontWeight: FontWeight.bold,
+          ),
         ),
       ),
     ),
