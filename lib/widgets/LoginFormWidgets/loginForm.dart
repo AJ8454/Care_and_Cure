@@ -1,12 +1,15 @@
-import 'package:care_and_cure/utils/responsive_helper.dart';
-import 'package:care_and_cure/widgets/googleLoginBttn.dart';
+import 'package:care_and_cure/widgets/LoginFormWidgets/googleLoginBttn.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:sizer/sizer.dart';
+import 'package:care_and_cure/utils/responsive_helper.dart';
 
 class LoginForm extends StatelessWidget {
   final VoidCallback flip;
-  const LoginForm({Key? key, required }) : super(key: key);
+  const LoginForm({
+    Key? key,
+    required this.flip,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -108,7 +111,7 @@ class LoginForm extends StatelessWidget {
             ),
           ),
           InkWell(
-            onTap: _flip,
+            onTap: flip,
             child: Text(
               " Register here!",
               style: TextStyle(

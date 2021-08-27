@@ -14,12 +14,6 @@ class LoginMenus extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           ResponsiveHelper.isDesktop(context) ? mainMenus(context) : SizedBox(),
-          Row(
-            children: [
-              _menuItem(context, title: "Sign in", isActive: true),
-              _registerButton(context),
-            ],
-          )
         ],
       ),
     );
@@ -65,36 +59,6 @@ Widget _menuItem(context, {String? title, bool isActive = false}) {
               )
             : SizedBox()
       ],
-    ),
-  );
-}
-
-Widget _registerButton(context) {
-  return GestureDetector(
-    onTap: () {},
-    child: Container(
-      height: 35,
-      width: ResponsiveHelper.isDesktop(context) ? 13.w : 18.w,
-      decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(15),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.grey.shade200,
-              spreadRadius: 10,
-              blurRadius: 12,
-            )
-          ]),
-      child: Center(
-        child: Text(
-          "Register",
-          style: TextStyle(
-            fontSize: ResponsiveHelper.isDesktop(context) ? 6.sp : 7.sp,
-            color: Colors.black45,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-      ),
     ),
   );
 }
