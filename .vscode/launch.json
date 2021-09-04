@@ -15,6 +15,16 @@
             "type": "dart",
             "flutterMode": "profile"
         },
-        
+        {
+            "name": "Flutter web",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-port",
+                "5000"
+            ]
+        }
     ]
 }

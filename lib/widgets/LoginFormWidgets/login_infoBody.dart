@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:care_and_cure/utils/responsive_helper.dart';
 
 class LoginInfo extends StatelessWidget {

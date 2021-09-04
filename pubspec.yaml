@@ -7,6 +7,7 @@ environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
+  cloud_firestore: ^2.5.1
   cupertino_icons: ^1.0.2
   firebase_auth: ^3.1.0
   firebase_core: ^1.6.0
@@ -14,6 +15,7 @@ dependencies:
     sdk: flutter
   google_fonts: ^2.1.0
   google_sign_in: ^5.0.7
+  google_sign_in_web: ^0.10.0+2
   hexcolor: ^2.0.4
   provider: ^6.0.0
   sizer: ^2.0.13
