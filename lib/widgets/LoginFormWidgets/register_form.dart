@@ -1,5 +1,5 @@
+import 'package:care_and_cure/utils/constant.dart';
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:sizer/sizer.dart';
 import 'package:care_and_cure/utils/responsive_helper.dart';
 import 'package:care_and_cure/widgets/LoginFormWidgets/googleLoginBttn.dart';
@@ -97,7 +97,7 @@ class RegisterForm extends StatelessWidget {
           width: ResponsiveHelper.isDesktop(context) ? 25.h : 25.h,
           height: ResponsiveHelper.isDesktop(context) ? 3.h : 5.h,
           decoration: BoxDecoration(
-            color: HexColor("#F50057"),
+            color: kPinkColor,
             borderRadius: BorderRadius.circular(30),
             boxShadow: [
               BoxShadow(
@@ -110,7 +110,7 @@ class RegisterForm extends StatelessWidget {
           child: ElevatedButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
-              primary: HexColor("#F50057"),
+              primary: kPinkColor,
               onPrimary: Colors.white,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(15),
@@ -146,7 +146,7 @@ class RegisterForm extends StatelessWidget {
                 " Login Page!",
                 style: TextStyle(
                   fontSize: 6.sp,
-                  color: HexColor("#F50057"),
+                  color: kPinkColor,
                   fontWeight: FontWeight.bold,
                 ),
               ),

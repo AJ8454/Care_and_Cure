@@ -1,6 +1,6 @@
+import 'package:care_and_cure/utils/constant.dart';
 import 'package:care_and_cure/utils/responsive_helper.dart';
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:sizer/sizer.dart';
 
 class LoginMenus extends StatelessWidget {
@@ -43,7 +43,7 @@ Widget _menuItem(context, {String? title, bool isActive = false}) {
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 8.sp,
-            color: isActive ? HexColor("#F50057") : Colors.grey,
+            color: isActive ? kPinkColor : Colors.grey,
           ),
         ),
         SizedBox(height: 6),
@@ -53,7 +53,7 @@ Widget _menuItem(context, {String? title, bool isActive = false}) {
                 height: 5,
                 padding: EdgeInsets.symmetric(horizontal: 12.h, vertical: 12.h),
                 decoration: BoxDecoration(
-                  color: HexColor("#F50057"),
+                  color: kPinkColor,
                   borderRadius: BorderRadius.circular(10),
                 ),
               )

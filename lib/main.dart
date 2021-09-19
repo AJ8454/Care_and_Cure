@@ -1,12 +1,11 @@
-import 'package:care_and_cure/loginScreen/initialPage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 import 'Provider/google_signIn_provider.dart';
-import 'Screens/home_screen.dart';
+import 'Screens/home_screen/home_screen.dart';
+import 'Screens/initialPage.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,7 +27,6 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             fontFamily: GoogleFonts.poppins().fontFamily,
             primarySwatch: Colors.green,
-            accentColor: HexColor("#ff884b"),
           ),
           initialRoute: '/',
           routes: {

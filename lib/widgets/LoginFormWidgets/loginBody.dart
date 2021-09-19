@@ -25,7 +25,7 @@ class _LoginBodyState extends State<LoginBody> {
     } else if (ResponsiveHelper.isTablet(context)) {
       return Column(
         children: [
-          LoginInfo(),
+          ResponsiveHelper.isTablet(context) ? LoginInfo() : MobileLoginInfo(),
           _mainImage(context),
           LoginFormWidget(),
         ],

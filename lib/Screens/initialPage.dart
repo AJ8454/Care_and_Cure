@@ -1,9 +1,11 @@
 import 'package:care_and_cure/Provider/google_signIn_provider.dart';
-import 'package:care_and_cure/Screens/auth_screen.dart';
-import 'package:care_and_cure/Screens/home_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import 'home_screen/home_screen.dart';
+import 'loginScreen/auth_screen.dart';
+
 
 class InitialPage extends StatelessWidget {
   @override
