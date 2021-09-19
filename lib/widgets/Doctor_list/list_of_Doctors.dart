@@ -32,6 +32,14 @@ class _ListOfDoctorsState extends State<ListOfDoctors> {
           right: false,
           child: Column(
             children: [
+              Text(
+                "Search nearby Doctor or Hospital",
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 16,
+                ),
+              ),
+              SizedBox(height: 5),
               // This is our Seearch bar
               Padding(
                 padding:

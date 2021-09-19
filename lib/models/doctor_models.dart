@@ -32,46 +32,46 @@ List<Doctor> doctors = List.generate(
 );
 
 final List demodata = [
+  // {
+  //   "name": "Apple",
+  //   "image": "assets/images/user_1.png",
+  //   "subject": "iPhone 12 is here",
+  //   "isAttachmentAvailable": false,
+  //   "isChecked": false,
+  //   "tagColor": null,
+  //   "time": "Now"
+  // },
   {
-    "name": "Apple",
-    "image": "assets/images/user_1.png",
-    "subject": "iPhone 12 is here",
-    "isAttachmentAvailable": false,
-    "isChecked": true,
-    "tagColor": null,
-    "time": "Now"
-  },
-  {
-    "name": "Elvia Atkins",
+    "name": "Dr. Steller Kame",
     "image": "assets/images/user_2.png",
-    "subject": "Inspiration for our new home",
-    "isAttachmentAvailable": true,
+    "subject": "Cardiologists",
+    "isAttachmentAvailable": false,
     "isChecked": false,
     "tagColor": null,
     "time": "15:32"
   },
   {
-    "name": "Marvin Kiehn",
+    "name": "Dr. Marvin Kiehn",
     "image": "assets/images/user_3.png",
-    "subject": "Business-focused empowering the world",
+    "subject": "Critical Care Medicine Specialists",
     "isAttachmentAvailable": true,
     "isChecked": false,
     "tagColor": null,
     "time": "14:27",
   },
   {
-    "name": "Domenic Bosco",
+    "name": "Dr. Domenic Bosco",
     "image": "assets/images/user_4.png",
-    "subject": "The fastest way to Design",
+    "subject": "Family Physicians",
     "isAttachmentAvailable": false,
     "isChecked": true,
     "tagColor": Color(0xFF23CF91),
     "time": "10:43"
   },
   {
-    "name": "Elenor Bauch",
+    "name": "Dr. Elenor Bauch",
     "image": "assets/images/user_5.png",
-    "subject": "New job opportunities",
+    "subject": "Infectious Disease Specialists",
     "isAttachmentAvailable": false,
     "isChecked": false,
     "tagColor": Color(0xFF3A6FF7),

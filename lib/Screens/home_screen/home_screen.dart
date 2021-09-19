@@ -1,3 +1,4 @@
+import 'package:care_and_cure/Screens/Dashboard/dashboard.dart';
 import 'package:care_and_cure/Screens/DoctorScreen/doctor_screen.dart';
 import 'package:care_and_cure/utils/responsive_helper.dart';
 import 'package:care_and_cure/widgets/Doctor_list/list_of_Doctors.dart';
@@ -19,7 +20,7 @@ class HomeScreen extends StatelessWidget {
             ),
             Expanded(
               flex: 9,
-              child: DoctorScreen(),
+              child: DashBoard(), //DoctorScreen(),
             ),
           ],
         ),
@@ -35,7 +36,7 @@ class HomeScreen extends StatelessWidget {
             ),
             Expanded(
               flex: _size.width > 1340 ? 8 : 10,
-              child: DoctorScreen(),
+              child: DashBoard(), //DoctorScreen(),
             ),
           ],
         ),
