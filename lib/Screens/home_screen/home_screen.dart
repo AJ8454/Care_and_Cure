@@ -1,5 +1,4 @@
 import 'package:care_and_cure/Screens/Dashboard/dashboard.dart';
-import 'package:care_and_cure/Screens/DoctorScreen/doctor_screen.dart';
 import 'package:care_and_cure/utils/responsive_helper.dart';
 import 'package:care_and_cure/widgets/Doctor_list/list_of_Doctors.dart';
 import 'package:care_and_cure/widgets/sideMenu_widgets/side_menu.dart';
@@ -11,7 +10,7 @@ class HomeScreen extends StatelessWidget {
     Size _size = MediaQuery.of(context).size;
     return Scaffold(
       body: ResponsiveHelper(
-        mobile: ListOfDoctors(),
+        mobile: DashBoard(),
         tablet: Row(
           children: [
             Expanded(
