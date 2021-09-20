@@ -46,18 +46,24 @@ class _MyHeaderState extends State<MyHeader> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
-            GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return InfoScreen();
-                    },
-                  ),
-                );
-              },
-              child: SvgPicture.asset("assets/Icons/menu.svg"),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                BackButton(),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) {
+                          return InfoScreen();
+                        },
+                      ),
+                    );
+                  },
+                  child: SvgPicture.asset("assets/Icons/menu.svg"),
+                ),
+              ],
             ),
             SizedBox(height: 20),
             Expanded(

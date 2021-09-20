@@ -16,7 +16,6 @@ const kTextColor = Color(0xFF4D5875);
 
 const kDefaultPadding = 20.0;
 
-
 // Colors
 const kBackgroundColor = Color(0xFFFEFEFE);
 const kTitleText2Color = Color(0xFF303030);
@@ -42,3 +41,13 @@ const kTitleTextstyle = TextStyle(
   color: kTitleText2Color,
   fontWeight: FontWeight.bold,
 );
+
+final Color bgColor = Color(0xffF9F9F9);
+final Color path1Color = Color(0xffE4E2FF);
+final Color getStartedColorStart = Color(0xff54D579);
+final Color getStartedColorEnd = Color(0xff00AABF);
+final Color path2Color = Color(0xffcef4e8);
+final Color docBgColor = Color(0xffE9B5FF);
+final Color docContentBgColor = Color(0xffECF0F5);
+final Color dateBgColor = Color(0xffD5E0FA);
+final Color dateColor = Color(0xff3479C0);

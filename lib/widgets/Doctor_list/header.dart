@@ -24,7 +24,7 @@ class Header extends StatelessWidget {
               "assets/Icons/Reply.svg",
               width: 24,
             ),
-            onPressed: () {},
+            onPressed: () => Navigator.pop(context),
           ),
           IconButton(
             icon: WebsafeSvg.asset(

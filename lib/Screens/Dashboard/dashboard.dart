@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 
 import 'package:care_and_cure/utils/extensions.dart';
 
+import 'appointmentScreen/appointment_screen.dart';
+
 class DashBoard extends StatelessWidget {
   const DashBoard({Key? key}) : super(key: key);
 
@@ -34,7 +36,7 @@ class DashBoard extends StatelessWidget {
                   onClicked: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => CovidScreen(),
+                      builder: (context) => AppointmentScreen(),
                     ),
                   ),
                 ),
@@ -82,30 +84,6 @@ class DashBoard extends StatelessWidget {
               ),
               Expanded(
                 child: DashBoardItems(
-                  imgPath: "assets/images/ambulance.png",
-                  label: "Ambulance",
-                  onClicked: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => CovidScreen(),
-                    ),
-                  ),
-                ),
-              ),
-              Expanded(
-                child: DashBoardItems(
-                  imgPath: "assets/images/ambulance.png",
-                  label: "Ambulance",
-                  onClicked: () => Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => CovidScreen(),
-                    ),
-                  ),
-                ),
-              ),
-              Expanded(
-                child: DashBoardItems(
                   imgPath: "assets/images/morgue.png",
                   label: "Morgue Storage",
                   onClicked: () => Navigator.push(
@@ -115,6 +93,12 @@ class DashBoard extends StatelessWidget {
                     ),
                   ),
                 ),
+              ),
+              Expanded(
+                child: Container(),
+              ),
+              Expanded(
+                child: Container(),
               ),
             ],
           ),
