@@ -51,3 +51,16 @@ final Color docBgColor = Color(0xffE9B5FF);
 final Color docContentBgColor = Color(0xffECF0F5);
 final Color dateBgColor = Color(0xffD5E0FA);
 final Color dateColor = Color(0xff3479C0);
+
+const kHCBackgroundColor = Color(0xFFF8F8F8);
+const kActiveIconColor = Color(0xFFE68342);
+const kHCTextColor = Color(0xFF222B45);
+const kBlueLightColor = Color(0xFFC7B8F5);
+const kBlueColor = Color(0xFF817DC0);
+const kHCShadowColor = Color(0xFFE6E6E6);
+
+const kHCTextS = TextStyle(
+  fontSize: 18,
+  color: kTextColor,
+  fontWeight: FontWeight.bold,
+);

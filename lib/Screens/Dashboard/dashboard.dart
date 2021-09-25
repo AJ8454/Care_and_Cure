@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:care_and_cure/utils/extensions.dart';
 
 import 'appointmentScreen/appointment_screen.dart';
+import 'healthCareScreen/healthCare_screen.dart';
 
 class DashBoard extends StatelessWidget {
   const DashBoard({Key? key}) : super(key: key);
@@ -48,7 +49,7 @@ class DashBoard extends StatelessWidget {
                   onClicked: () => Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => CovidScreen(),
+                      builder: (context) => HealthCare(),
                     ),
                   ),
                 ),
