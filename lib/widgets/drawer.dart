@@ -10,64 +10,79 @@ class DrawerList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Drawer(
       elevation: 8,
-      child: ListView(children: [
-        const SizedBox(
-          height: 60,
-          child: DrawerHeader(
-            child: Text(
-              'Care & Cure',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 22,
-                color: kCyanColor,
+      child: Container(
+        color: bgColor,
+        child: ListView(children: [
+          Container(
+            color: bgColor,
+            height: 60,
+            child: DrawerHeader(
+              child: Text(
+                'Care & Cure',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 22,
+                  color: kCyanColor,
+                ),
               ),
             ),
           ),
-        ),
-        const DrawerListTile(
-          name: 'Products',
-          icon: Icons.production_quantity_limits,
-          navigate: '/ProductScreen',
-        ),
-        const DrawerListTile(
-          name: 'Employees',
-          icon: Icons.person,
-          navigate: '/EmployeeScreen',
-        ),
-        const DrawerListTile(
-          name: 'Attendance',
-          icon: Icons.group,
-          navigate: '/OrderScreen',
-        ),
-        const DrawerListTile(
-          name: 'Orders',
-          icon: Icons.local_shipping_rounded,
-          navigate: '/OrderScreen',
-        ),
-        Row(
-          children: const [
-            Expanded(
-              child: Divider(),
+          const DrawerListTile(
+            name: 'Covid-19',
+            icon: Icons.production_quantity_limits,
+            navigate: '/ProductScreen',
+          ),
+          const DrawerListTile(
+            name: 'Appointment',
+            icon: Icons.person,
+            navigate: '/EmployeeScreen',
+          ),
+          const DrawerListTile(
+            name: 'Health Care',
+            icon: Icons.group,
+            navigate: '/OrderScreen',
+          ),
+          const DrawerListTile(
+            name: 'Ambulance',
+            icon: Icons.local_shipping_rounded,
+            navigate: '/OrderScreen',
+          ),
+          const DrawerListTile(
+            name: 'Morgue',
+            icon: Icons.local_shipping_rounded,
+            navigate: '/OrderScreen',
+          ),
+          Container(
+            color: bgColor,
+            child: Row(
+              children: const [
+                Expanded(
+                  child: Divider(),
+                ),
+              ],
             ),
-          ],
-        ),
-        ListTile(
-          leading: const Icon(
-            Icons.exit_to_app,
-            color: kDarkColor,
           ),
-          title: const Text(
-            'Logout',
-            style: TextStyle(fontSize: 13),
+          Container(
+            color: bgColor,
+            child: ListTile(
+              leading: const Icon(
+                Icons.exit_to_app,
+                color: kDarkColor,
+              ),
+              title: const Text(
+                'Logout',
+                style: TextStyle(fontSize: 13),
+              ),
+              onTap: () {
+                final provider =
+                    Provider.of<GoogleSignInProvider>(context, listen: false);
+                provider.logout();
+              },
+            ),
           ),
-          onTap: () {
-            final provider =
-                Provider.of<GoogleSignInProvider>(context, listen: false);
-            provider.logout();
-          },
-        ),
-      ]),
+        ]),
+      ),
     );
   }
 }
@@ -85,19 +100,22 @@ class DrawerListTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: Icon(
-        icon,
-        color: kDarkColor,
+    return Container(
+      color: bgColor,
+      child: ListTile(
+        leading: Icon(
+          icon,
+          color: kDarkColor,
+        ),
+        title: Text(
+          name!,
+          style: const TextStyle(fontSize: 13),
+        ),
+        onTap: () {
+          Navigator.of(context).popUntil((route) => route.isFirst);
+          Navigator.of(context).pushNamed(navigate!);
+        },
       ),
-      title: Text(
-        name!,
-        style: const TextStyle(fontSize: 13),
-      ),
-      onTap: () {
-        Navigator.of(context).popUntil((route) => route.isFirst);
-        Navigator.of(context).pushNamed(navigate!);
-      },
     );
   }
 }

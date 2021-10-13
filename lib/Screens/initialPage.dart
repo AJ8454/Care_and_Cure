@@ -1,18 +1,19 @@
 import 'package:care_and_cure/Provider/google_signIn_provider.dart';
+import 'package:care_and_cure/utils/responsive_helper.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'desktop_home_screen.dart';
+import 'util_screens/desktop_home_screen.dart';
 import 'loginScreen/auth_screen.dart';
-import 'mobile_home_screen.dart';
-
+import 'util_screens/mobile_home_screen.dart';
+import 'util_screens/tablet_home_screen.dart';
 
 class InitialPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-     double _width = MediaQuery.of(context).size.width;
-   // double _height = MediaQuery.of(context).size.height;
+    double _width = MediaQuery.of(context).size.width;
+    // double _height = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Colors.white,
       body: StreamBuilder(
@@ -24,7 +25,13 @@ class InitialPage extends StatelessWidget {
               child: CircularProgressIndicator(),
             );
           } else if (snapshot.hasData) {
-            return (_width > 500) ? const DesktopHomeScreen() : const MobileHomeScreen();
+            if (ResponsiveHelper.isDesktop(context)) {
+              return const DesktopHomeScreen();
+            } else if (ResponsiveHelper.isTablet(context)) {
+              return TabletHomeScreen();
+            } else {
+              return  MobileHomeScreen();
+            }
           } else {
             return AuthScreen();
           }
