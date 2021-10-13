@@ -4,7 +4,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
 import 'Provider/google_signIn_provider.dart';
-import 'Screens/home_screen/home_screen.dart';
 import 'Screens/initialPage.dart';
 
 void main() async {
@@ -31,7 +30,6 @@ class MyApp extends StatelessWidget {
           initialRoute: '/',
           routes: {
             '/': (ctx) => InitialPage(),
-            '/HomeScreen': (ctx) => HomeScreen(),
           },
         );
       }),
