@@ -1,3 +1,4 @@
+import 'package:care_and_cure/widgets/dashboard/dashboard.dart';
 import 'package:care_and_cure/widgets/drawer.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +27,8 @@ class MobileHomeScreen extends StatelessWidget {
                 ),
                 Expanded(
                   child: Container(
-                    color: Colors.orange[500],
+                    color: Colors.white,
+                    child: DashBoard(),
                   ),
                 ),
               ],

@@ -11,10 +11,10 @@ class DrawerList extends StatelessWidget {
     return Drawer(
       elevation: 8,
       child: Container(
-        color: bgColor,
+        color: kBgLightColor,
         child: ListView(children: [
           Container(
-            color: bgColor,
+            color: kBgLightColor,
             height: 60,
             child: DrawerHeader(
               child: Text(
@@ -54,7 +54,7 @@ class DrawerList extends StatelessWidget {
             navigate: '/OrderScreen',
           ),
           Container(
-            color: bgColor,
+            color: kBgLightColor,
             child: Row(
               children: const [
                 Expanded(
@@ -64,7 +64,7 @@ class DrawerList extends StatelessWidget {
             ),
           ),
           Container(
-            color: bgColor,
+            color: kBgLightColor,
             child: ListTile(
               leading: const Icon(
                 Icons.exit_to_app,
@@ -101,7 +101,7 @@ class DrawerListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: bgColor,
+      color: kBgLightColor,
       child: ListTile(
         leading: Icon(
           icon,

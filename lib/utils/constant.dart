@@ -19,4 +19,4 @@ const kBgColor = Color(0xFFF4F4F4);
 const kGreyColor = Color(0xFF6F737C);
 const kCyanColor = Color(0xFF008175);
 
-const Color bgColor = Color(0xFFEBEDFA);
+

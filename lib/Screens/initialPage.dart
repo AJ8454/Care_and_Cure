@@ -12,8 +12,6 @@ import 'util_screens/tablet_home_screen.dart';
 class InitialPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    double _width = MediaQuery.of(context).size.width;
-    // double _height = MediaQuery.of(context).size.height;
     return Scaffold(
       backgroundColor: Colors.white,
       body: StreamBuilder(

@@ -1,5 +1,5 @@
-import 'package:auto_size_text_pk/auto_size_text_pk.dart';
 import 'package:care_and_cure/utils/constant.dart';
+import 'package:care_and_cure/widgets/dashboard/dashboard.dart';
 import 'package:care_and_cure/widgets/doctor_list/doctor_list.dart';
 import 'package:care_and_cure/widgets/drawer.dart';
 import 'package:flutter/material.dart';
@@ -9,25 +9,27 @@ class DesktopHomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size _size = MediaQuery.of(context).size;
     return Scaffold(
-      backgroundColor: bgColor,
+      backgroundColor: kBgDarkColor,
       body: Row(
         children: [
           Expanded(
-            flex: 2,
+            flex: _size.width > 1340 ? 2 : 4,
             child: Container(
-              color: bgColor,
+              color: kBgLightColor,
               child: DrawerList(),
             ),
           ),
           Expanded(
-            flex: 3,
+            flex: _size.width > 1340 ? 3 : 5,
             child: DoctorList(),
           ),
           Expanded(
-            flex: 4,
+            flex: _size.width > 1340 ? 8 : 10,
             child: Container(
-              color: Colors.green[500],
+              color: Colors.white,
+              child: DashBoard(),
             ),
           ),
         ],

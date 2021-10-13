@@ -1,3 +1,5 @@
+import 'package:care_and_cure/utils/constant.dart';
+import 'package:care_and_cure/widgets/dashboard/dashboard.dart';
 import 'package:care_and_cure/widgets/doctor_list/doctor_list.dart';
 import 'package:care_and_cure/widgets/drawer.dart';
 import 'package:flutter/material.dart';
@@ -16,25 +18,27 @@ class TabletHomeScreen extends StatelessWidget {
         children: [
           Expanded(
             flex: 2,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                IconButton(
-                  onPressed: () => scaffoldKey.currentState!.openDrawer(),
-                  icon: Icon(
-                    Icons.menu,
+            child: Container(
+              color: kBgDarkColor,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  IconButton(
+                    onPressed: () => scaffoldKey.currentState!.openDrawer(),
+                    icon: Icon(
+                      Icons.menu,
+                    ),
                   ),
-                ),
-                Expanded(
-                  child:  DoctorList(),
-                ),
-              ],
+                  DoctorList(),
+                ],
+              ),
             ),
           ),
           Expanded(
             flex: 4,
             child: Container(
-              color: Colors.green[500],
+              color: Colors.white,
+              child: DashBoard(),
             ),
           ),
         ],
