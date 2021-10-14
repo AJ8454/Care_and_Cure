@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sizer/sizer.dart';
+import 'Provider/doctor_list_provider.dart';
 import 'Provider/google_signIn_provider.dart';
 import 'Screens/initialPage.dart';
 
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (ctx) => GoogleSignInProvider()),
+        ChangeNotifierProvider(create: (ctx) => DoctorListProvider()),
       ],
       child: Sizer(builder: (context, orientation, deviceType) {
         return MaterialApp(
