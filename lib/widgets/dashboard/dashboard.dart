@@ -1,4 +1,4 @@
-import 'package:care_and_cure/Screens/covid_screen.dart';
+import 'package:care_and_cure/Screens/covid_screen/covid_screen.dart';
 import 'package:care_and_cure/utils/constant.dart';
 import 'package:flutter/material.dart';
 

@@ -126,7 +126,7 @@ class DoctorCard extends StatelessWidget {
                 left: 8,
                 top: 0,
                 child: WebsafeSvg.asset(
-                  "assets/Icons/Markup filled.svg",
+                  "assets/Icons/Markup.svg",
                   height: 18,
                   color: doctor!.tagColor,
                 ),
