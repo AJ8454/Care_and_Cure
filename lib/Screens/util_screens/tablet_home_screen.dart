@@ -29,17 +29,17 @@ class TabletHomeScreen extends StatelessWidget {
                       Icons.menu,
                     ),
                   ),
-                  Expanded(
-                    flex: 6,
-                    child: DoctorList(),
-                  ),
+                  DoctorList(),
                 ],
               ),
             ),
           ),
           Expanded(
-            flex: 9,
-            child: DashBoard(), //DoctorScreen(),
+            flex: 4,
+            child: Container(
+              color: Colors.white,
+              child: DashBoard(),
+            ),
           ),
         ],
       ),

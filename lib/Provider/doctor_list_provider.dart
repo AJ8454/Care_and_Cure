@@ -13,7 +13,7 @@ class DoctorListProvider with ChangeNotifier {
   final List demodata = [
     {
       "name": "Dr. Rahul Kumar",
-      "image": "assets/images/user_1.png",
+      "image": "assets/images/profile.png",
       "subject": "Family Physicians",
       "isAttachmentAvailable": false,
       "isChecked": false,

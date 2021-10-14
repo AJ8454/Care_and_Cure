@@ -63,7 +63,11 @@ class _DoctorListState extends State<DoctorList> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    resultLoaded = _refreshDoctors();
+    if (ResponsiveHelper.isDesktop(context)) {
+      resultLoaded = _refreshDoctors();
+    } else if (ResponsiveHelper.isMobile(context)) {
+      resultLoaded = _refreshDoctors();
+    }
   }
 
   searchResulList() {
