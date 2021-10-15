@@ -311,7 +311,8 @@ class _ShowAppointmentBookDialogState extends State<ShowAppointmentBookDialog> {
                     width: 150,
                   ),
                   child: ElevatedButton(
-                    onPressed: () => Navigator.of(context).pop(),
+                    onPressed: () => Navigator.of(context)
+                        .popUntil((route) => route.isFirst),
                     child: Text('Book Now'),
                   ),
                 ),

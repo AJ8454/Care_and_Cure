@@ -1,5 +1,6 @@
 import 'package:care_and_cure/Screens/appointment_screen/appointment_screen.dart';
 import 'package:care_and_cure/Screens/covid_screen/covid_screen.dart';
+import 'package:care_and_cure/Screens/healcare_screen/healthcare_screen.dart';
 import 'package:care_and_cure/utils/constant.dart';
 import 'package:flutter/material.dart';
 
@@ -101,7 +102,7 @@ class DashBoard extends StatelessWidget {
               padding: const EdgeInsets.all(12.0),
               child: InkWell(
                 onTap: () => Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => CovideScreen())),
+                    MaterialPageRoute(builder: (context) => HealthCareScreen())),
                 child: Container(
                   width: 250,
                   height: 250,
