@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class Doctor {
-  final String? image, name, subject, body, time;
+  final String? image, name, subject, body, time, description, qualification;
   final bool? isAttachmentAvailable, isChecked;
   final Color? tagColor;
 
   Doctor({
     this.time,
     this.isChecked,
+    this.description,
+    this.qualification,
     this.image,
     this.name,
     this.subject,

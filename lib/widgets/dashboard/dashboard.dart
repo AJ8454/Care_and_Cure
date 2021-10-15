@@ -1,3 +1,4 @@
+import 'package:care_and_cure/Screens/appointment_screen/appointment_screen.dart';
 import 'package:care_and_cure/Screens/covid_screen/covid_screen.dart';
 import 'package:care_and_cure/utils/constant.dart';
 import 'package:flutter/material.dart';
@@ -23,7 +24,7 @@ class DashBoard extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.all(12.0),
-              child: GestureDetector(
+              child: InkWell(
                 onTap: () => Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => CovideScreen())),
                 child: Container(
@@ -60,9 +61,9 @@ class DashBoard extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(12.0),
-              child: GestureDetector(
-                onTap: () => Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => CovideScreen())),
+              child: InkWell(
+                onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => AppointmentScreen())),
                 child: Container(
                   width: 250,
                   height: 250,
@@ -98,7 +99,7 @@ class DashBoard extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(12.0),
-              child: GestureDetector(
+              child: InkWell(
                 onTap: () => Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => CovideScreen())),
                 child: Container(
@@ -136,7 +137,7 @@ class DashBoard extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(12.0),
-              child: GestureDetector(
+              child: InkWell(
                 onTap: () => Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => CovideScreen())),
                 child: Container(
@@ -174,7 +175,7 @@ class DashBoard extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(12.0),
-              child: GestureDetector(
+              child: InkWell(
                 onTap: () => Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => CovideScreen())),
                 child: Container(
@@ -212,7 +213,7 @@ class DashBoard extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(12.0),
-              child: GestureDetector(
+              child: InkWell(
                 onTap: () => Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => CovideScreen())),
                 child: Container(

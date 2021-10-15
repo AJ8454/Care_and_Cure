@@ -260,7 +260,8 @@ class _CovideScreenState extends State<CovideScreen> {
                             ],
                           ),
                         ],
-                      )),
+                      ),
+                      ),
                 )
               ],
             ),
