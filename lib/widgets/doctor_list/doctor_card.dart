@@ -87,7 +87,7 @@ class DoctorCard extends StatelessWidget {
                   ),
                   SizedBox(height: 20 / 2),
                   Text(
-                    doctor!.body!,
+                    doctor!.description!,
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                     style: Theme.of(context).textTheme.caption!.copyWith(

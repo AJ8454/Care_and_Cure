@@ -24,7 +24,7 @@ class DoctorListProvider with ChangeNotifier {
       "time": "Now"
     },
     {
-      "name": "DR. SUBRAMANIAN SWAMINATHAN",
+      "name": "DR. Subramanian Swaminathan ",
       "image": "assets/images/Drsubramanians.jpg",
       "subject": "Infectious Diseases & HIV Physician",
       "qualification": "MD, DNB, ABIM, AB Infectious Diseases",
@@ -36,7 +36,7 @@ class DoctorListProvider with ChangeNotifier {
       "time": "Now"
     },
     {
-      "name": "DR. SUNIL SHROFF",
+      "name": "DR. Sunil Shroff",
       "image": "assets/images/Drsunil.jpg",
       "subject": "Urology & Transplantation - Kidneys",
       "qualification": "MBBS, FRCS, Dip. Urology, MS",
@@ -48,7 +48,7 @@ class DoctorListProvider with ChangeNotifier {
       "time": "Now"
     },
     {
-      "name": "DR. VISHNU VANDANA GOWTHAMNATH",
+      "name": "DR. Vishnu Vandana Gowthamnath",
       "image": "assets/images/DrVishnu.jpeg",
       "subject": "Obstetrics & Gynecology",
       "qualification": "MD, DNB, ABIM",
@@ -60,7 +60,7 @@ class DoctorListProvider with ChangeNotifier {
       "time": "Now"
     },
     {
-      "name": "DR. MADHAVAN SESHADRI",
+      "name": "DR. Madhavan Seshadri",
       "image": "assets/images/user_4.png",
       "subject": "Psychiatry & Neuropsychiatrist",
       "qualification": "MBBS, MRCPsych",
@@ -85,7 +85,7 @@ class DoctorListProvider with ChangeNotifier {
       "time": "Now"
     },
     {
-      "name": "Dr. VIJAY ANAND",
+      "name": "Dr. Vijay Anand",
       "image": "assets/images/dr.vjy.jpg",
       "subject": "Complementary & Alternative Medicine",
       "qualification": "MD (HOM)",
@@ -97,7 +97,7 @@ class DoctorListProvider with ChangeNotifier {
       "time": "Now"
     },
     {
-      "name": "DR. SAMRAT JANKAR",
+      "name": "DR. Samart Jankar",
       "image": "assets/images/dr.samratjankar.jpg",
       "subject": "Gastrointestinal Surgery & Laparoscopic Surgery, Proctology",
       "qualification": "MBBS, MS, DNB",
@@ -109,7 +109,7 @@ class DoctorListProvider with ChangeNotifier {
       "time": "Now"
     },
     {
-      "name": "DR. NEELAM",
+      "name": "DR. Neelam",
       "image": "assets/images/DrNeelam31jan.jpg",
       "subject": "Obstetrics & Gynecology",
       "qualification": "MBBS, DGO, MD",
@@ -121,7 +121,7 @@ class DoctorListProvider with ChangeNotifier {
       "time": "Now"
     },
     {
-      "name": "DR. TAMILSELVI ARJUNAN",
+      "name": "DR. Tamilselvi Arajunam",
       "image": "assets/images/Drmmmgynec.jpg",
       "subject": "Obstetrics & Gynecology",
       "qualification": "MBBS, DGO, MRCOG, FRCOG",
