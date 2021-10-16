@@ -39,23 +39,23 @@ class HealthCareScreen extends StatelessWidget {
                         child: Wrap(
                           children: [
                             HealthCareCard(
-                              imagePath: 'assets/images/ambulance.png',
-                              title: 'chest',
+                              imagePath: 'assets/images/meditation.jpg',
+                              title: 'Meditation',
                               onClicked: () {},
                             ),
                             HealthCareCard(
-                              imagePath: 'assets/images/ambulance.png',
-                              title: 'chest',
+                              imagePath: 'assets/images/workout.jpg',
+                              title: 'Workout',
                               onClicked: () {},
                             ),
                             HealthCareCard(
-                              imagePath: 'assets/images/ambulance.png',
-                              title: 'chest',
+                              imagePath: 'assets/images/yoga.jpg',
+                              title: 'Yoga',
                               onClicked: () {},
                             ),
                             HealthCareCard(
-                              imagePath: 'assets/images/ambulance.png',
-                              title: 'chest',
+                              imagePath: 'assets/images/protein.jpg',
+                              title: 'Protein Diet',
                               onClicked: () {},
                             ),
                             HealthCareCard(
