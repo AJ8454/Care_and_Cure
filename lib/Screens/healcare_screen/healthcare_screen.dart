@@ -2,6 +2,7 @@ import 'package:care_and_cure/utils/constant.dart';
 import 'package:flutter/material.dart';
 
 import 'healthcare_card.dart';
+import 'meditation_screen.dart';
 
 class HealthCareScreen extends StatelessWidget {
   const HealthCareScreen({Key? key}) : super(key: key);
@@ -41,7 +42,8 @@ class HealthCareScreen extends StatelessWidget {
                             HealthCareCard(
                               imagePath: 'assets/images/meditation.jpg',
                               title: 'Meditation',
-                              onClicked: () {},
+                              onClicked: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => MeditationScreen())),
                             ),
                             HealthCareCard(
                               imagePath: 'assets/images/workout.jpg',
