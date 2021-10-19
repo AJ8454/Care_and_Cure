@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'healthcare_card.dart';
 import 'meditation_screen.dart';
+import 'work_out_screen.dart';
 import 'yoga_screen.dart';
 
 class HealthCareScreen extends StatelessWidget {
@@ -53,7 +54,7 @@ class HealthCareScreen extends StatelessWidget {
                               title: 'Workout',
                               onClicked: () => Navigator.of(context).push(
                                   MaterialPageRoute(
-                                      builder: (context) => YogaScreen())),
+                                      builder: (context) => WorkOutScreen())),
                             ),
                             HealthCareCard(
                               imagePath: 'assets/images/yoga.jpg',
