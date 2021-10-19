@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'healthcare_card.dart';
 import 'meditation_screen.dart';
+import 'yoga_screen.dart';
 
 class HealthCareScreen extends StatelessWidget {
   const HealthCareScreen({Key? key}) : super(key: key);
@@ -43,17 +44,23 @@ class HealthCareScreen extends StatelessWidget {
                               imagePath: 'assets/images/meditation.jpg',
                               title: 'Meditation',
                               onClicked: () => Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => MeditationScreen())),
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          MeditationScreen())),
                             ),
                             HealthCareCard(
                               imagePath: 'assets/images/workout.jpg',
                               title: 'Workout',
-                              onClicked: () {},
+                              onClicked: () => Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                      builder: (context) => YogaScreen())),
                             ),
                             HealthCareCard(
                               imagePath: 'assets/images/yoga.jpg',
                               title: 'Yoga',
-                              onClicked: () {},
+                              onClicked: () => Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                      builder: (context) => YogaScreen())),
                             ),
                             HealthCareCard(
                               imagePath: 'assets/images/protein.jpg',
