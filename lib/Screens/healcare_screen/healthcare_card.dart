@@ -20,8 +20,8 @@ class HealthCareCard extends StatelessWidget {
       child: InkWell(
         onTap: onClicked,
         child: Container(
-          width: 250,
-          height: 200,
+          width: 450,
+          height: 300,
           decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.all(Radius.circular(10)),

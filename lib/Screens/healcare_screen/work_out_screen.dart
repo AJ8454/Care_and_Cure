@@ -23,15 +23,15 @@ class WorkOutScreen extends StatelessWidget {
                 color: Colors.grey,
                 fontWeight: FontWeight.bold,
               ),
-            ),
+            ),                                                                                                                                                                                                                                                                                                                              
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 70),
-            child: Text(
+            child: Text(                                                                                                                                                                                                                                                                    
               'Exercises to do at home.',
               style: TextStyle(
                 fontSize: 18,
-                color: Colors.grey,
+                color: Colors.grey,                                                                                   
               ),
             ),
           ),
