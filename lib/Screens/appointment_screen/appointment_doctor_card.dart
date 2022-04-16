@@ -1,7 +1,10 @@
+import 'package:care_and_cure/Provider/appointment_provider.dart';
+import 'package:care_and_cure/models/appointment_model.dart';
 import 'package:flutter/material.dart';
 
 import 'package:care_and_cure/models/doctor_models.dart';
 import 'package:care_and_cure/utils/constant.dart';
+import 'package:provider/provider.dart';
 
 class AppointmentDoctorCard extends StatelessWidget {
   final bool? isActive;
@@ -311,8 +314,20 @@ class _ShowAppointmentBookDialogState extends State<ShowAppointmentBookDialog> {
                     width: 150,
                   ),
                   child: ElevatedButton(
-                    onPressed: () => Navigator.of(context)
-                        .popUntil((route) => route.isFirst),
+                    onPressed: () async {
+                      final provider = Provider.of<AppointmentProvider>(context,
+                          listen: false);
+                      await provider.addAppointment(
+                        apt: AppointmentModel(
+                            image: widget.doctor.image,
+                            docName: widget.doctor.name!,
+                            docDescription: widget.doctor.subject!,
+                            date: '26/04/2022',
+                            time: '02:30 PM'),
+                      );
+
+                      Navigator.of(context).popUntil((route) => route.isFirst);
+                    },
                     child: Text('Book Now'),
                   ),
                 ),

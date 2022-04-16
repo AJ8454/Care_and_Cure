@@ -36,7 +36,7 @@ class DrawerList extends StatelessWidget {
           const DrawerListTile(
             name: 'Appointment',
             icon: Icons.person,
-            navigate: '/EmployeeScreen',
+            navigate: '/appointment',
           ),
           const DrawerListTile(
             name: 'Health Care',
@@ -112,7 +112,7 @@ class DrawerListTile extends StatelessWidget {
           style: const TextStyle(fontSize: 13),
         ),
         onTap: () {
-          Navigator.of(context).popUntil((route) => route.isFirst);
+          // Navigator.of(context).popUntil((route) => route.isFirst);
           Navigator.of(context).pushNamed(navigate!);
         },
       ),

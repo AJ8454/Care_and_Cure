@@ -1,3 +1,5 @@
+import 'package:care_and_cure/Provider/appointment_provider.dart';
+import 'package:care_and_cure/Screens/appointment_screen/appoint_list_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -19,6 +21,7 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(create: (ctx) => GoogleSignInProvider()),
         ChangeNotifierProvider(create: (ctx) => DoctorListProvider()),
+        ChangeNotifierProvider(create: (ctx) => AppointmentProvider()),
       ],
       child: Sizer(builder: (context, orientation, deviceType) {
         return MaterialApp(
@@ -31,6 +34,7 @@ class MyApp extends StatelessWidget {
           initialRoute: '/',
           routes: {
             '/': (ctx) => InitialPage(),
+            '/appointment': (ctx) => AppointListScreen(),
           },
         );
       }),
