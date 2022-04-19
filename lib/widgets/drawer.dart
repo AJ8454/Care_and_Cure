@@ -50,8 +50,13 @@ class DrawerList extends StatelessWidget {
           ),
           const DrawerListTile(
             name: 'Morgue',
-            icon: Icons.local_shipping_rounded,
+            icon: Icons.add_box_outlined,
             navigate: '/OrderScreen',
+          ),
+          const DrawerListTile(
+            name: 'User Panel',
+            icon: Icons.verified_user,
+            navigate: '/mainScreen',
           ),
           Container(
             color: kBgLightColor,
